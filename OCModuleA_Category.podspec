@@ -21,17 +21,18 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/yangshen/OCModuleA_Category'
+  s.homepage         = 'https://github.com/kellenyangs/OCModuleA_Category'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yangshen' => 'shen.yang@beantechs.com' }
-  s.source           = { :git => 'https://github.com/yangshen/OCModuleA_Category.git', :tag => s.version.to_s }
+  s.author           = { 'yangshen' => 'kysonyangs@gmai.com' }
+  s.source           = { :git => 'https://github.com/kellenyangs/OCModuleA_Category.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.platform = :ios, "9.0"
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'OCModuleA_Category/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'OCModuleA_Category' => ['OCModuleA_Category/Assets/*.png']
   # }
@@ -39,4 +40,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency "CTMediator"
 end
